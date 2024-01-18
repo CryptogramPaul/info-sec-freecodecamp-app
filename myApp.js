@@ -3,15 +3,6 @@ const helmet = require('helmet');
 const app = express();
 app.use(helmet.hidePoweredBy());
 
-
-// const PORT = process.env.PORT || 3030;
-
-// // your code
-
-// app.listen(PORT, () => {
-//   console.log(`server started on port ${PORT}`);
-// })
-
 module.exports = app;
 const api = require('./server.js');
 app.use(express.static('public'));
